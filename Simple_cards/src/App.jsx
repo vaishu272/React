@@ -37,6 +37,12 @@ const App = () => {
         img="https://images.unsplash.com/photo-1541516160071-4bb0c5af65ba?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE1fHx8ZW58MHx8fHx8"
         greetingUser={greetingUser}
       />
+      <Card
+        user="Ansh"
+        age={22}
+        img="https://images.unsplash.com/photo-1524845355781-8eee51c6976b?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        greetingUser={greetingUser}
+      />
     </div>
   );
 };
