@@ -1,6 +1,6 @@
 import { NavLink, useNavigate } from "react-router-dom";
 import { useState } from "react";
-import logo from "../assets/logo.jpeg";
+import logo from "../assets/logo.png";
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -25,10 +25,10 @@ const Navbar = () => {
           <div className="flex items-center justify-between h-20 relative">
             {/* Logo */}
             <div
-              className="flex cursor-pointer items-center gap-3"
+              className="flex cursor-pointer items-center"
               onClick={() => navigate("/")}
             >
-              <img src={logo} alt="logo" className="w-11 h-11 rounded" />
+              <img src={logo} alt="logo" className="mt-2 w-20 h-22 rounded" />
               <span className="text-white text-lg font-bold">
                 Online Ka Adda
               </span>
