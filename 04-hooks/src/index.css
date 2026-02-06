@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+/* ---------------- GLOBAL FORM CONTROLS ---------------- */
+
+select,
+input,
+textarea {
+  background-color: transparent;
+  color: inherit;
+  border: 1px solid rgba(148, 163, 184, 0.4);
+  padding: 0.5rem 0.75rem;
+}
+
+/* ---------- LIGHT MODE ---------- */
+html {
+  background-color: white;
+  color: #1d293d;
+}
+
+html select,
+html option {
+  background-color: white;
+  color: #1d293d;
+}
+
+/* ---------- DARK MODE ---------- */
+html.dark {
+  background-color: #0b1220;
+  color: rgb(243 244 246);
+}
+
+html.dark select {
+  background-color: #0b1220;
+  color: rgb(243 244 246);
+}
+
+html.dark option {
+  background-color: #0b1220;
+  color: rgb(243 244 246);
+}
+
+/* ---------- Disabled / placeholder options ---------- */
+option:disabled {
+  color: rgba(148, 163, 184, 0.6); /* slate-400 */
+}
+
+/* ---------- Smooth transition ---------- */
+html,
+body {
+  min-height: 100%;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
