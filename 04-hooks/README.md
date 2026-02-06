@@ -1,7 +1,8 @@
 # React Hooks Practice Project
 
-This project is a React Hooks learning playground built using React, Vite, and Tailwind CSS.  
-It demonstrates core React hooks with small, real-world examples and a responsive UI.
+This project is a React Hooks learning playground built using **React, Vite, React Router, and Tailwind CSS**.  
+It demonstrates core React hooks with **practical, real-world examples** and a clean, responsive UI.  
+The focus of this project is to understand **when, why, and how** to use each hook correctly.
 
 ## Features
 
@@ -9,6 +10,7 @@ It demonstrates core React hooks with small, real-world examples and a responsiv
   - Counter example
   - Object state handling
   - Dependent dropdowns (Country → State → City)
+  - Controlled form inputs
 
 - useReducer
   - Todo List example
@@ -16,16 +18,34 @@ It demonstrates core React hooks with small, real-world examples and a responsiv
   - Demonstrates predictable state management for complex logic
 
 - useEffect
-  - API data fetching
-  - Loading state handling
+  - API data fetching with loading and error handling
   - Dynamic API switching (Users / Posts / Comments)
+  - Auto-save draft example using localStorage
+  - Cleanup with timers and event listeners
+  - Window resize listener example
+
+- useContext
+  - Global theme management (Light / Dark mode)
+  - Access theme across multiple components
+  - Avoids prop drilling
+
+- useRef
+  - Timer example (start / stop / reset)
+  - DOM manipulation
+  - Scroll-to-element example
+
+- Performance Optimization
+  - useMemo to avoid expensive recalculations
+  - useCallback with React.memo to prevent unnecessary re-renders
 
 - React Router
   - Nested routing using createBrowserRouter
   - Shared layout with Navbar and Outlet
+  - Clean navigation between hook examples
 
 - Tailwind CSS
   - Responsive, mobile-first design
+  - Global theming support
   - Clean and reusable UI components
 
 ## Project Structure
@@ -34,20 +54,34 @@ src/
 ├── components/
 │ ├── Navbar.jsx
 │ ├── Home.jsx
-│ ├── UseState.jsx
-│ ├── UseReducer.jsx // Todo List (Add / Remove)
-│ ├── UseEffect.jsx
+│ ├── State/
+│ │ ├── UseState.jsx
+│ │ ├── UseReducer.jsx
+│ ├── SideEffect/
+│ │ ├── Example1.jsx // API Fetch
+│ │ ├── Example2.jsx // Auto Save
+│ │ ├── Example3.jsx // Resize Listener
+│ ├── Dom_ref/
+│ │ ├── UseRef.jsx
+│ ├── Performance/
+│ │ ├── UseMemo.jsx
+│ │ ├── UseCallback.jsx
+├── context/
+│ ├── ThemeContext.jsx
+│ ├── useTheme.js
 ├── App.jsx
 ├── main.jsx
 ├── index.css
 
 ## Learning Goals
 
-- Understand how React hooks work
+- Understand how React hooks work internally
 - Learn when to use useState vs useReducer
-- Manage complex state using reducer pattern
-- Handle side effects correctly using useEffect
-- Build responsive layouts with Tailwind CSS
+- Manage complex state using the reducer pattern
+- Handle side effects safely with proper cleanup
+- Optimize performance using memoization
+- Avoid prop drilling using Context API
+- Build responsive layouts using Tailwind CSS
 
 ## Tech Stack
 
@@ -56,14 +90,6 @@ src/
 - React Router DOM
 - Tailwind CSS
 
-## Future Plans
-
-- useMemo
-- useCallback
-- useContext
-- Custom Hooks
-- Form validation examples
-
 ## Run Locally
 
 npm install  
@@ -71,4 +97,5 @@ npm run dev
 
 ## Notes
 
-This project is designed to grow as more hooks are added in the future.
+This project is designed to grow incrementally as more hooks and patterns are learned.  
+Each example focuses on **clarity, best practices, and real-world usage** rather than shortcuts.
